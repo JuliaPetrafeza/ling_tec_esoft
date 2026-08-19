@@ -27,6 +27,30 @@ int main(int argc, char *argv[]) {
 
 	// implemente um programa que leia um numero n (com n positivo e n <= 64)e mostra na tela o seu valor em base binaria(bits)
 
+	/* 	int n, bit_64, bit_32, bit_16, bit_8, bit_4, bit_2, resultado;
+	printf("Entre com o valor para a conversao: ");
+	scanf("%d", &n);
+	
+	bit_64 = n%2;
+	resultado = n/2;
+	
+	bit_32 = resultado%2;
+	resultado = resultado/2;
+	
+	bit_16 = resultado%2;
+	resultado = resultado/2;
+	
+	bit_8 = resultado%2;
+	resultado = resultado/2;
+	
+	bit_4 = resultado%2;
+	resultado = resultado/2;
+	
+	bit_2 = resultado%2;
+	resultado = resultado/2;
+	
+	printf("O numero %d em binario = %d%d%d%d%d%d%d", n, resultado%2, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64); */
+
     int n;
     int auxiliar;
     int bit1, bit2, bit3, bit4, bit5, bit6, bit7;
