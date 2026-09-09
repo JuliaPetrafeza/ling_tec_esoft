@@ -11,7 +11,6 @@ int main(int argc, char *argv[]) {
 	int cpf, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, digito1, digito2,soma, resto;
 	
 	printf("Insira o seu cpf: ");
-	scanf("%d", &cpf);
 	scanf("%d %d %d . %d %d %d . %d %d %d - %d %d", &d1, &d2, &d3, &d4, &d5, &d6, &d7, &d8, &d9, &d10, &d11);
 	
 	//soma = multDigito(d1,10) + multDigito(d2,9) + multDigito(d3,8) + multDigito(d4,7) + multDigito(d5,6) + multDigito(d6,5) + multDigito(d7,4) + multDigito(d8,3) + multDigito(d9,2) +
