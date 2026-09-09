@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>>
 
-void ex 1() {
+void ex1() {
 
 	//faça um progrma que leia dois inteiros e depois os imprima na ordem inversa que foram lidos
 
@@ -12,9 +12,10 @@ void ex 1() {
 	scanf("%d", &primeiro);
 
 	printf("Insira o segundo valor: ");
-	scanf("%d", &segundo); }
+	scanf("%d", &segundo); 
+}
 
-void ex 2() {
+void ex2() {
 
 	printf("%d \n %d", segundo, primeiro);
 
@@ -26,7 +27,7 @@ void ex 2() {
 
 	//faça um programa que leia um valor do tipo double e depois o imprima na forma de notação científica
 
-void ex 3() {
+void ex3() {
 	// implemente um programa que leia um numero n (com n positivo e n <= 64)e mostra na tela o seu valor em base binaria(bits)
 
 	/* 	int n, bit_64, bit_32, bit_16, bit_8, bit_4, bit_2, resultado;
@@ -85,7 +86,7 @@ void ex 3() {
 
     printf("%d %d %d %d %d %d %d", bit1, bit2, bit3, bit4, bit5, bit6, bit7); }
 
-void ex 4() {
+void ex4() {
 
     /* faça um programa que leia o salario fixo e o valor total em vendas de um vendedor, sabendo que este vendedor ganha 15% de comissão
     sobre suas vendas efetuada, mostre o total a receber no fim do mês, com duas casas decimais */
@@ -98,9 +99,10 @@ void ex 4() {
 
     salarioT = salarioF + ((vendas * 15) / 100);
 
-    printf("O total a receber no fim do mes e igual a %.2lf", salarioT); }
+    printf("O total a receber no fim do mes e igual a %.2lf", salarioT); 
+}
 
-void ex 5() {
+void ex5() {
 
     /* elabore um programa que peça ao usuário para digitar 4 valores, e mostre na tela a soma, a media e o produtório desses valores */
 
@@ -116,9 +118,10 @@ void ex 5() {
     media = soma / 4;
     produtorio = valor1 * valor2 * valor3 * valor4;
 
-    printf("A soma dos valores e igual a %lf, a media e igual a %lf e o produtorio e igual a %lf", soma, media, produtorio); }
+    printf("A soma dos valores e igual a %lf, a media e igual a %lf e o produtorio e igual a %lf", soma, media, produtorio);
+}
 
-	void ex 6() {
+	void ex6() {
 
     /* leia um valor inteiro correspondente a idade de uma pessoa em dias e informe-a em anos, meses e dias */
 
@@ -135,7 +138,7 @@ void ex 5() {
 
 	}
 
-	void ex 7() {
+	void ex7() {
 
     /* faça um programa que calcule e mostre o volume de uma esfera sendo fornecido o valor de seu raio(R), a formula para calcular calcular o volume e
     (4/3) * pi * R3 */
@@ -152,7 +155,7 @@ void ex 5() {
 
 	}
 
-	void ex 8() {
+	void ex8() {
     /* leia os quatro valores do usuario correspondentes as coordenadas em um plano cartesiano, p1(x1,y1) e p2(x2,y2),e calcule e mostre
     a distancia entre eles, sabendo que d = raiz((x2 - x1)^2 + (y2 - y1)^2) */
 
@@ -172,61 +175,62 @@ void ex 5() {
 
     printf("A distancia entre os pontos é de: %d", d);
 
-	return 0; }
+	return 0; 
+	}
 
 	int main(int argc, char *argv[]) {
 	
 	int op;
-	printf("Insira qual exercicio quer resolver(2, 3, 8): ");
+	printf("Insira qual exercicio quer resolver: ");
 	scanf("%d", &op);
 	
 	switch(op) {
 	
 	case 1:
 		
-		exec1();
+		ex1();
 	
 	break;
 
 	case 2:
 		
-		exec2();
+		ex2();
 	
 	break;
 	
 	case 3:
 	 
-		exec3();
+		ex3();
 	
 	break;
 	
 	case 4:
 	 
-		exec4();
+		ex4();
     
     break;
 
 	case 5:
 		
-		exec5();
+		ex5();
 	
 	break;
 
 	case 6:
 		
-		exec6();
+		ex6();
 	
 	break;
 
 	case 7:
 		
-		exec7();
+		ex7();
 	
 	break;
 
 	case 8:
 		
-		exec8();
+		ex8();
 	
 	break;
     
