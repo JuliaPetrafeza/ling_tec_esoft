@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>>
 
-int main(int argc, char *argv[]) {
+void ex 1() {
 
 	//faça um progrma que leia dois inteiros e depois os imprima na ordem inversa que foram lidos
 
@@ -12,19 +12,21 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &primeiro);
 
 	printf("Insira o segundo valor: ");
-	scanf("%d", &segundo);
+	scanf("%d", &segundo); }
 
-	// printf("%d \n %d", segundo, primeiro);
+void ex 2() {
+
+	printf("%d \n %d", segundo, primeiro);
 
 	aux = primeiro;
 	primeiro = segundo;
 	segundo = aux;
 
-	printf("%d \n%d", primeiro, segundo); // você tem que printar as variaveis na ordem em que elas foram lidas
+	printf("%d \n%d", primeiro, segundo); // você tem que printar as variaveis na ordem em que elas foram lidas }
 
 	//faça um programa que leia um valor do tipo double e depois o imprima na forma de notação científica
 
-
+void ex 3() {
 	// implemente um programa que leia um numero n (com n positivo e n <= 64)e mostra na tela o seu valor em base binaria(bits)
 
 	/* 	int n, bit_64, bit_32, bit_16, bit_8, bit_4, bit_2, resultado;
@@ -81,7 +83,9 @@ int main(int argc, char *argv[]) {
     bit7 = auxiliar / 1;
     auxiliar = auxiliar - bit7 * 1;
 
-    printf("%d %d %d %d %d %d %d", bit1, bit2, bit3, bit4, bit5, bit6, bit7);
+    printf("%d %d %d %d %d %d %d", bit1, bit2, bit3, bit4, bit5, bit6, bit7); }
+
+void ex 4() {
 
     /* faça um programa que leia o salario fixo e o valor total em vendas de um vendedor, sabendo que este vendedor ganha 15% de comissão
     sobre suas vendas efetuada, mostre o total a receber no fim do mês, com duas casas decimais */
@@ -94,7 +98,9 @@ int main(int argc, char *argv[]) {
 
     salarioT = salarioF + ((vendas * 15) / 100);
 
-    printf("O total a receber no fim do mes e igual a %.2lf", salarioT);
+    printf("O total a receber no fim do mes e igual a %.2lf", salarioT); }
+
+void ex 5() {
 
     /* elabore um programa que peça ao usuário para digitar 4 valores, e mostre na tela a soma, a media e o produtório desses valores */
 
@@ -110,7 +116,9 @@ int main(int argc, char *argv[]) {
     media = soma / 4;
     produtorio = valor1 * valor2 * valor3 * valor4;
 
-    printf("A soma dos valores e igual a %lf, a media e igual a %lf e o produtorio e igual a %lf", soma, media, produtorio);
+    printf("A soma dos valores e igual a %lf, a media e igual a %lf e o produtorio e igual a %lf", soma, media, produtorio); }
+
+	void ex 6() {
 
     /* leia um valor inteiro correspondente a idade de uma pessoa em dias e informe-a em anos, meses e dias */
 
@@ -125,6 +133,10 @@ int main(int argc, char *argv[]) {
 
     printf("A sua idade em anos e igual a %d, em meses igual a %d e em dias igual a %d", ano, meses, dias);
 
+	}
+
+	void ex 7() {
+
     /* faça um programa que calcule e mostre o volume de uma esfera sendo fornecido o valor de seu raio(R), a formula para calcular calcular o volume e
     (4/3) * pi * R3 */
 
@@ -138,6 +150,9 @@ int main(int argc, char *argv[]) {
 
     printf("O volume da esfera e igual a %lf", volume);
 
+	}
+
+	void ex 8() {
     /* leia os quatro valores do usuario correspondentes as coordenadas em um plano cartesiano, p1(x1,y1) e p2(x2,y2),e calcule e mostre
     a distancia entre eles, sabendo que d = raiz((x2 - x1)^2 + (y2 - y1)^2) */
 
@@ -157,6 +172,67 @@ int main(int argc, char *argv[]) {
 
     printf("A distancia entre os pontos é de: %d", d);
 
-	return 0;
+	return 0; }
 
+	int main(int argc, char *argv[]) {
+	
+	int op;
+	printf("Insira qual exercicio quer resolver(2, 3, 8): ");
+	scanf("%d", &op);
+	
+	switch(op) {
+	
+	case 1:
+		
+		exec1();
+	
+	break;
+
+	case 2:
+		
+		exec2();
+	
+	break;
+	
+	case 3:
+	 
+		exec3();
+	
+	break;
+	
+	case 4:
+	 
+		exec4();
+    
+    break;
+
+	case 5:
+		
+		exec5();
+	
+	break;
+
+	case 6:
+		
+		exec6();
+	
+	break;
+
+	case 7:
+		
+		exec7();
+	
+	break;
+
+	case 8:
+		
+		exec8();
+	
+	break;
+    
 }
+	 
+	return 0;
+}
+
+
