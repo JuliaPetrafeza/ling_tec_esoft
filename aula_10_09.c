@@ -8,12 +8,12 @@ float calc_inss(float salario){
 	else return salario * 0.14;
 }
 
-float calc_irpf(float salario){
-	if (salario - calc_inss(salario) <= 2259.20) return 0;
-	else if(salario - calc_inss(salario) <= 2826.65) return (salario * 0.075) - 169.44;
-	else if(salario - calc_inss(salario) <=  3751.05) return (salario * 0.15) - 381.44;
-	else if(salario - calc_inss(salario) <= 4664.68)  return (salario * 0.225) - 662.77;
-	else return (salario * 0.275) - 896.00;
+float calc_irpf(float salario_base){
+	if (salario_base <= 2259.20) return 0;
+	else if(salario_base <= 2826.65) return (salario_base * 0.075) - 169.44;
+	else if(salario_base <=  3751.05) return (salario_base * 0.15) - 381.44;
+	else if(salario_base <= 4664.68)  return (salario_base * 0.225) - 662.77;
+	else return (salario_base * 0.275) - 896.00;
 	
 }
 
@@ -21,7 +21,7 @@ float calc_irpf(float salario){
 
 int main(int argc, char *argv[]) {
 	
-	float salario, desconto_inss, valor_hora, desconto_irpf, salario_liquido;
+	float salario, desconto_inss, valor_hora, desconto_irpf, salario_liquido, salario_base;
 	int horas;
 	
 	printf("Insira o valor da sua hora: ");
@@ -33,13 +33,14 @@ int main(int argc, char *argv[]) {
 	salario = valor_hora * horas;
 	
 	desconto_inss = calc_inss(salario);
+
+	salario_base = salario - desconto_inss;
 	
-	desconto_irpf = calc_irpf(salario);
+	desconto_irpf = calc_irpf(salario_base);
 	
-	if (desonto_irpf == 0) {
+	//if (desconto_irpf == 0) {
 		
-	desonto_irpf = "Isento"; //é float nao recebe palavra 
-}
+	//desconto_irpf = "Isento"; //é float nao recebe palavra 
 
 	
 	salario_liquido = salario - (desconto_inss + desconto_irpf);
