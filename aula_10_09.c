@@ -50,6 +50,12 @@ int main(int argc, char *argv[]) {
 	printf("======================================================\n");
 	printf("Salário Bruto (Horas x Valor):   R$ %f\n", salario);
 	printf("(-) Desconto INSS:               R$ %f\n", desconto_inss);
+	if (desconto_irpf == 0) {
+    	printf("(-) Desconto IRPF:               Isento\n");
+	} 
+	else {
+    	printf("(-) Desconto IRPF:               R$ %f\n", desconto_irpf);
+	}
 	printf("(-) Desconto IRPF:               R$ %f\n", desconto_irpf);
 	printf("------------------------------------------------------\n");
 	printf(" LIQUIDO A RECEBER:               R$ %f\n", salario_liquido);
