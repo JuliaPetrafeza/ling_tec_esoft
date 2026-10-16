@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* função
+/* funÃ§Ã£o
 tipo nome (lista de parametros){
 	comandos
 	comandos...
@@ -10,7 +10,7 @@ tipo nome (lista de parametros){
 
 void exec2 (){
 	
-		//faça um programa que leia um valor em reais e a cotação do dolar, em seguida imprima o valor em dólares
+		//faÃ§a um programa que leia um valor em reais e a cotaÃ§Ã£o do dolar, em seguida imprima o valor em dÃ³lares
 		 
 		float reais, cota;
 		 
@@ -23,7 +23,7 @@ void exec2 (){
 		
 void exec3 (){
 	
-		/* leia um valor que represente uma temperatura em Celsius e apresente-a convertida em temperatura Fahrenheit, a fórmula é:
+		/* leia um valor que represente uma temperatura em Celsius e apresente-a convertida em temperatura Fahrenheit, a fÃ³rmula Ã©:
 	    F = C * (9.0 / 5.0) + 32.0 */
 	    
 	    float tempC, tempF;
@@ -38,7 +38,7 @@ void exec3 (){
 
 void exec8 (){
 	
-		//leia um valor inteiro que corresponde a duração de determinado evento em uma fabrica em segundos
+		//leia um valor inteiro que corresponde a duraÃ§Ã£o de determinado evento em uma fabrica em segundos
 	    //e depois o imprima no formato horas:minutos:segundos
 	    
 	    int evento, horas, minutos, segundos;
